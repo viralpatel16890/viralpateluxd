@@ -1,0 +1,65 @@
+
+.vps{
+    margin-top: 50px;
+}
+.vps h1{
+    color: #333333;
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.vps h4{
+    color: #333333;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.vps p{
+    font-size: 15px;
+    margin-bottom: 15px;
+    color: #333333;
+}
+.vps p a{
+    font-weight: 700;
+    color: #333333;
+    text-decoration: none;
+}
+.vps ul{
+    margin: 0 0 15px 0;
+    padding: 0;
+    display: flex;
+}
+.vps ul li{
+    display: inline-block;
+    margin-right: 15px;
+}
+.vps button{
+    background: #0F3662;
+    border-radius: 7px;
+    color: #fff;
+    width: 180px;
+    height: 44px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+.vps button img{
+    vertical-align: sub;
+    margin-right: 5px;
+}
+
+.vps1{
+    margin-bottom: 20px;
+    display: flex;
+}
+.vps1 img{
+    margin-right: 15px;
+}
+
+.vps2{
+    margin-top: 50px;
+    height: 100%;
+}
+.vps2 img{
+    width: 100%;
+}
