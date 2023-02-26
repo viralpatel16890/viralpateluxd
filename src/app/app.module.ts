@@ -28,7 +28,7 @@ import {MatMenuModule} from '@angular/material/menu';
     NgbModule,
     MatToolbarModule,
     MatButtonModule,
-    MatMenuModule
+    MatMenuModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

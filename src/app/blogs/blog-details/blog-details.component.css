@@ -1,0 +1,40 @@
+
+
+
+.blogs{
+    margin: 30px 0 30px 0;
+}
+.blogs h2{
+    color: #1E0E62;
+    margin: 0;
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.blogs img{
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+}
+.blogs aside{
+    margin: 30px 0 30px 0;
+}
+.blogs aside h4{
+    margin: 0 0 15px 0;
+    font-weight: 700;
+    font-size: 30px;
+}
+.blogs p{
+    margin: 0;
+    line-height: 34px;
+    font-size: 18px;
+}
+
+.seprator{
+    color: rgba(21, 20, 57, 0.6);
+    border-left: 5px solid;
+    padding-left: 15px;
+    font-size: 24px;
+    font-style: italic;
+}

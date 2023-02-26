@@ -1,0 +1,37 @@
+
+
+
+.blogs{
+    box-shadow: 0 1px 2px 0 #1e0e62;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+.blogs h2{
+    color: #1E0E62;
+    margin: 0;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+}
+.blogs img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.blogs p{
+    margin: 0;
+    color: rgba(21, 20, 57, 0.6);
+    padding: 15px;
+    font-weight: 500;
+}
+.blogs a{
+    text-decoration: none;
+}
+
+.blogs1{
+    color: #21243D;
+    font-size: 44px;
+    font-weight: 700;
+    margin-top: 30px;
+}

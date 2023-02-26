@@ -17,7 +17,9 @@ const routes: Routes = [
   { path: 'design-mentor', loadChildren: () => import('./design-mentor/design-mentor.module').then(m => m.DesignMentorModule) },
   { path: 'business-strategist', loadChildren: () => import('./business-strategist/business-strategist.module').then(m => m.BusinessStrategistModule) },
   { path: 'brand-consultant', loadChildren: () => import('./brand-consultant/brand-consultant.module').then(m => m.BrandConsultantModule) },
-  { path: 'motivational-speaker', loadChildren: () => import('./motivational-speaker/motivational-speaker.module').then(m => m.MotivationalSpeakerModule) }
+  { path: 'motivational-speaker', loadChildren: () => import('./motivational-speaker/motivational-speaker.module').then(m => m.MotivationalSpeakerModule) },
+  { path: 'blogs', loadChildren: () => import('./blogs/blogs.module').then(m => m.BlogsModule) },
+  { path: 'blogs/blog-details', loadChildren: () => import('./blogs/blog-details/blog-details.module').then(m => m.BlogDetailsModule) }
   
 ];
 
