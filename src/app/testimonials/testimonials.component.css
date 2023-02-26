@@ -1,0 +1,41 @@
+
+
+.testi{
+    margin: 30px 0 30px 0;
+}
+.testi h1{
+    color: #21243D;
+    line-height: 60px;
+    font-size: 44px;
+    font-weight: 700;
+}
+.testi ul{
+    margin: 25px 0 0 0;
+    padding: 0;
+}
+.testi ul li{
+    display: table-cell;
+    vertical-align: top;
+}
+.testi ul li img{
+    margin-right: 15px;
+}
+.testi ul li p{
+    color: rgba(21, 20, 57, 0.4);
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.testi ul li h4{
+    color: #1E0E62;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 18px;
+    letter-spacing: 1px;
+}
+.testi ul li h4 span{
+    display: block;
+    color: rgba(21, 20, 57, 0.4);
+    font-weight: 400;
+    margin-top: 5px;
+}
