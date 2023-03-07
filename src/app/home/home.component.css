@@ -37,7 +37,7 @@
     background: #0F3662;
     border-radius: 7px;
     color: #fff;
-    width: 180px;
+    min-width: 180px;
     height: 44px;
     border: none;
     outline: none;

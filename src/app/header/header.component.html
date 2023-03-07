@@ -1,21 +1,49 @@
 
 
-
-<mat-toolbar>
-    <span><img src="assets/img/viral-patel-studio-logo.svg"></span>
+<mat-toolbar class="desktop_menu">
+    <span routerLink="" routerLinkActive="" [routerLinkActiveOptions]="{exact: true}" style="cursor: pointer;">
+        <img src="assets/img/viral-patel-studio-logo.svg">
+    </span>
     <span class="example-spacer"></span>
-    <button mat-button routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</button>
-    <button mat-button [matMenuTriggerFor]="menu">About</button>
-    <mat-menu #menu="matMenu">
-        <button mat-menu-item routerLink="/design-mentor" routerLinkActive="active">Design Mentor</button>
-        <button mat-menu-item routerLink="/business-strategist" routerLinkActive="active">Business Strategist</button>
-        <button mat-menu-item routerLink="/brand-consultant" routerLinkActive="active">Brand Consultant</button>
-        <button mat-menu-item routerLink="/motivational-speaker" routerLinkActive="active">Motivational Speaker</button>
-    </mat-menu>
-    <button mat-button routerLink="/projects" routerLinkActive="active">Projects</button>
-    <button mat-button routerLink="/blogs" routerLinkActive="active">Blogs</button>
-    <!-- <button mat-button>Tweets</button/> -->
-    <button mat-button routerLink="/testimonials" routerLinkActive="active">Testimonials</button>
-    <!-- <button mat-button>Hire Me</button>
-    <button mat-button>Contact</button> -->
+    <div>
+        <button mat-button routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</button>
+        <button mat-button [matMenuTriggerFor]="menu">About ▼</button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item routerLink="/design-mentor" routerLinkActive="active">Design Mentor</button>
+            <button mat-menu-item routerLink="/business-strategist" routerLinkActive="active">Business Strategist</button>
+            <button mat-menu-item routerLink="/brand-consultant" routerLinkActive="active">Brand Consultant</button>
+            <button mat-menu-item routerLink="/motivational-speaker" routerLinkActive="active">Motivational Speaker</button>
+        </mat-menu>
+        <button mat-button routerLink="/projects" routerLinkActive="active">Projects</button>
+        <button mat-button routerLink="/blogs" routerLinkActive="active">Blogs</button>
+        <!-- <button mat-button>Tweets</button/> -->
+        <button mat-button routerLink="/testimonials" routerLinkActive="active">Testimonials</button>
+        <!-- <button mat-button>Hire Me</button>
+        <button mat-button>Contact</button> -->
+    </div>
+</mat-toolbar>
+
+<mat-toolbar class="mobile_menu">
+    <mat-drawer-container class="example-container" hasBackdrop="true">
+    <mat-drawer #drawer mode="over">
+        <button mat-button routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</button>
+        <button mat-button [matMenuTriggerFor]="menu">About ▼</button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item routerLink="/design-mentor" routerLinkActive="active">Design Mentor</button>
+            <button mat-menu-item routerLink="/business-strategist" routerLinkActive="active">Business Strategist</button>
+            <button mat-menu-item routerLink="/brand-consultant" routerLinkActive="active">Brand Consultant</button>
+            <button mat-menu-item routerLink="/motivational-speaker" routerLinkActive="active">Motivational Speaker</button>
+        </mat-menu>
+        <button mat-button routerLink="/projects" routerLinkActive="active">Projects</button>
+        <button mat-button routerLink="/blogs" routerLinkActive="active">Blogs</button>
+        <button mat-button routerLink="/testimonials" routerLinkActive="active">Testimonials</button>
+    </mat-drawer>
+
+    <mat-drawer-content>
+        <span routerLink="" routerLinkActive="" [routerLinkActiveOptions]="{exact: true}" style="cursor: pointer;">
+            <img src="assets/img/viral-patel-studio-logo.svg">
+        </span>
+      <button mat-icon-button (click)="drawer.toggle()" class="toggle-mnn"><mat-icon>menu</mat-icon></button>
+    </mat-drawer-content>
+  </mat-drawer-container>
 </mat-toolbar>
