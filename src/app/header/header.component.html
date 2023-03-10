@@ -7,7 +7,7 @@
     <span class="example-spacer"></span>
     <div>
         <button mat-button routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</button>
-        <button mat-button [matMenuTriggerFor]="menu">About ▼</button>
+        <button mat-button [matMenuTriggerFor]="menu">About <mat-icon>arrow_drop_down</mat-icon></button>
         <mat-menu #menu="matMenu">
             <button mat-menu-item routerLink="/design-mentor" routerLinkActive="active">Design Mentor</button>
             <button mat-menu-item routerLink="/business-strategist" routerLinkActive="active">Business Strategist</button>
@@ -26,17 +26,19 @@
 <mat-toolbar class="mobile_menu">
     <mat-drawer-container class="example-container" hasBackdrop="true">
     <mat-drawer #drawer mode="over">
-        <button mat-button routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</button>
-        <button mat-button [matMenuTriggerFor]="menu">About ▼</button>
-        <mat-menu #menu="matMenu">
-            <button mat-menu-item routerLink="/design-mentor" routerLinkActive="active">Design Mentor</button>
-            <button mat-menu-item routerLink="/business-strategist" routerLinkActive="active">Business Strategist</button>
-            <button mat-menu-item routerLink="/brand-consultant" routerLinkActive="active">Brand Consultant</button>
-            <button mat-menu-item routerLink="/motivational-speaker" routerLinkActive="active">Motivational Speaker</button>
+        <button (click)="drawer.toggle()" mat-button routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</button>
+        <button mat-button [matMenuTriggerFor]="menu1">About 
+            <mat-icon style="float: right; margin-top: 5px;">arrow_drop_down</mat-icon>
+        </button>
+        <mat-menu #menu1="matMenu">
+            <button (click)="drawer.toggle()" mat-menu-item routerLink="/design-mentor" routerLinkActive="active">Design Mentor</button>
+            <button (click)="drawer.toggle()" mat-menu-item routerLink="/business-strategist" routerLinkActive="active">Business Strategist</button>
+            <button (click)="drawer.toggle()" mat-menu-item routerLink="/brand-consultant" routerLinkActive="active">Brand Consultant</button>
+            <button (click)="drawer.toggle()" mat-menu-item routerLink="/motivational-speaker" routerLinkActive="active">Motivational Speaker</button>
         </mat-menu>
-        <button mat-button routerLink="/projects" routerLinkActive="active">Projects</button>
-        <button mat-button routerLink="/blogs" routerLinkActive="active">Blogs</button>
-        <button mat-button routerLink="/testimonials" routerLinkActive="active">Testimonials</button>
+        <button (click)="drawer.toggle()" mat-button routerLink="/projects" routerLinkActive="active">Projects</button>
+        <button (click)="drawer.toggle()" mat-button routerLink="/blogs" routerLinkActive="active">Blogs</button>
+        <button (click)="drawer.toggle()" mat-button routerLink="/testimonials" routerLinkActive="active">Testimonials</button>
     </mat-drawer>
 
     <mat-drawer-content>
