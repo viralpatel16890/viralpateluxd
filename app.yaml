@@ -1,0 +1,15 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+
+
+- url: /
+  static_files: dist\vps\index.html
+  upload: dist\vps\index.html
+
+- url: /
+  static_dir: dist\vps\index.html
+
+
